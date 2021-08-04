@@ -115,46 +115,5 @@ namespace Ветивления
 
             return circleWin ? GameResult.CircleWin : GameResult.CrossWin;
         }
-        /*public static GameResult GetGameResult(Mark[,] field) 
-        {
-            var CrossWinner = 0;
-            var CircleWinner = 0;
-
-            for (int x = 0; x < field.Length; x++)
-            {
-                for (int y = 0; y < field.Length; y++)
-                {
-                    if (field[x, y] == Mark.Cross)
-                    {
-                        CrossWinner++;
-                        if (field[x, y] == Mark.Cross && field[x - 1, y - 1] == Mark.Cross)
-                        {
-                            CrossWinner++;
-                            if (field[x, y] == Mark.Cross)
-                            {
-                                CrossWinner++;
-                                if (CrossWinner == 3)
-                                {
-                                    return GameResult.CrossWin;
-                                }
-
-                            }
-                        }
-                    }
-                    else if (field[x, y] == Mark.Empty)
-                    {
-                        if (field[x, y] == Mark.Empty)
-                        {
-                            if (field[x, y] == Mark.Empty)
-                            {
-                                return GameResult.Draw;
-                            }
-                        }
-                    }
-                }
-            }
-
-            return GameResult.Draw;
-        }*/
     }
 }

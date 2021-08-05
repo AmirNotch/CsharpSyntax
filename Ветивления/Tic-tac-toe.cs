@@ -18,7 +18,7 @@ namespace Ветивления
             Draw
         }
 
-        public static void Main()
+        /*public static void Main()
         {
             Run("XXX OO. ...");
             Run("OXO XO. .XO");
@@ -32,7 +32,7 @@ namespace Ветивления
             Run("X.. XOO XOX");
 
 
-        }
+        }*/
 
         private static void Run(string description)
         {

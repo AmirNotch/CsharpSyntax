@@ -8,20 +8,20 @@ namespace Ветивления
 {
     class CodeC
     {
-        /*public static void Main(string[] Args)
+        public static void Main(string[] Args)
         {
 
             double[] array = new[] { 1.2, 2.2, 3.2, 6.2, 4.2, };
             int[] items = new[] { 1, 2, 1, 1 };
 
-            *//*Double method1 = MinIndex(array);
+            Double method1 = MinIndex(array);
             Console.WriteLine(method1);
-            Console.WriteLine(MaxIndex(array));*//*
+            Console.WriteLine(MaxIndex(array));
 
             Console.WriteLine(GetElementCount(items, 1));
 
 
-            *//*int[] a = { 1, 2, 1, 2, 1, 7, 7 };
+            int[] a = { 1, 2, 1, 2, 1, 7, 7 };
             int max = 0, nmax = 0;
             for (int i = 0; i < a.Length - 1; i++)
                 for (int n = 0, j = i + 1; j < a.Length; j++)
@@ -34,22 +34,22 @@ namespace Ветивления
                             max = a[i];
                         }
                     }
-            if (nmax > 0) Console.WriteLine("{0} {1}", max, nmax);*/
+            if (nmax > 0) Console.WriteLine("{0} {1}", max, nmax);
 
-            /*var arr = new[] { 1, 2, 3, 4,};
+            var arr = new[] { 1, 2, 3, 4, };
             var arr2 = new[] { 3, 4 };
-            Console.WriteLine(FindSubarrayStaerIndex(arr, arr2));*/
+            /*Console.WriteLine(FindSubarrayStaerIndex(arr, arr2));
 
-            /*Console.WriteLine(GetSuit(Suits.Wands));
+            Console.WriteLine(GetSuit(Suits.Wands));
             Console.WriteLine(GetSuit(Suits.Coins));
             Console.WriteLine(GetSuit(Suits.Cups));
-            Console.WriteLine(GetSuit(Suits.Swords));*/
+            Console.WriteLine(GetSuit(Suits.Swords));
 
 
-            /*int[] array2 = new int[0];
-            Console.WriteLine(array2 == null);*/
+            int[] array2 = new int[0];
+            Console.WriteLine(array2 == null);
 
-            /*Console.WriteLine(CheckFirstElement(null));
+            Console.WriteLine(CheckFirstElement(null));
             Console.WriteLine(CheckFirstElement(new int[0]));
             Console.WriteLine(CheckFirstElement(new[] { 1 }));
             Console.WriteLine(CheckFirstElement(new[] { 0 }));
@@ -58,7 +58,7 @@ namespace Ветивления
 
             Console.WriteLine(GetPoweredArray(arrayToPower, 1));
             Console.WriteLine(GetPoweredArray(arrayToPower, 2));
-            Console.WriteLine(GetPoweredArray(arrayToPower, 3));*//*
+            Console.WriteLine(GetPoweredArray(arrayToPower, 3));*/
 
 
             int[,] twoDimensionalArray = new int[2, 3];
@@ -104,21 +104,91 @@ namespace Ветивления
             {
                 massive[i] = i;
             }
-            Console.WriteLine(massive.Length-1);
+            Console.WriteLine(massive.Length - 1);
 
-            var a = new int[] { 1, 2, 3 };
+            /*var a = new int[] { 1, 2, 3 };
             var b = new int[] { 1, 2, 3 };
-            Console.WriteLine( a == a );
+            Console.WriteLine(a == a);*/
 
-            var ab = "XOX OXO OXO".Replace(" ", Environment.NewLine);
+            /*var ab = "XOX OXO OXO".Replace(" ", Environment.NewLine);
             var field = ab.Split(' ');
-            Console.WriteLine(field);
+            Console.WriteLine(field);*/
 
 
 
+            /*string[] lines = new string[56];
+            lines[0] = "решИла нЕ Упрощать и зашифРОВАтЬ Все послаНИЕ " +
+                "дАже не Старайся нИЧЕГО у тЕбя нЕ получится с расшифРОВкой " +
+                "Сдавайся НЕ твоего ума Ты не споСОбЕн Но может быть " +
+                "если особенно упорно подойдешь к делу " +
+                "будет Трудно конечнО " +
+                "Код ведЬ не из простых " +
+                "очень ХОРОШИЙ код " +
+                "то у тебя все получится " +
+                "и я буДу Писать тЕбЕ еще " +
+                "чао";*/
 
+            string text = "решИла нЕ Упрощать и зашифРОВАтЬ Все послаНИЕ " +
+                "дАже не Старайся нИЧЕГО у тЕбя нЕ получится с расшифРОВкой " +
+                "Сдавайся НЕ твоего ума Ты не споСОбЕн Но может быть " +
+                "если особенно упорно подойдешь к делу " +
+                "будет Трудно конечнО " +
+                "Код ведЬ не из простых " +
+                "очень ХОРОШИЙ код " +
+                "то у тебя все получится " +
+                "и я буДу Писать тЕбЕ еще " +
+                "чао";
 
-        }*/
+            string[] lines = text.Split(' ');
+            Console.WriteLine(lines.Length);
+            Console.WriteLine(DecodeMessage(lines));
+        }
+
+        public static string DecodeMessage(string[] lines)
+        {
+            List<string> list = new List<string>();
+            for (int i = 0; i < lines.Length; i++)
+            {
+                if (lines[i].Substring(0, 1).Any(char.IsUpper))
+                {
+                    list.Insert(1, lines[i]);
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            Console.WriteLine(list);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            /*String listDone = "";
+            char[] chars = lines[0].ToCharArray();
+            for (int ctr = 0; ctr < chars.Length; ctr++)
+            {
+                if (Char.IsUpper(chars[ctr]) && chars[ctr - 1] != ' ')
+                {
+                    if (chars[ctr + 1] != ' ')
+                    {
+
+                    }
+                    list.Insert(0 ,Convert.ToString(chars[ctr]));
+                    // Console.Write(Convert.ToString(chars[ctr]));
+                    listDone += Convert.ToString(chars[ctr]);
+                }
+                else
+                {
+                    continue;
+                }
+            }*/
+           /* foreach (var letter in list)
+            {
+                Console.Write(letter);
+            }*/
+            Console.WriteLine();
+            return "";
+        }
 
         public static int[] GetPoweredArray(int[] arr, int power)
         {
@@ -126,7 +196,7 @@ namespace Ветивления
             int number = 0;
             foreach (var index in arr)
             {
-                
+
                 array[number] = (int)Math.Pow(index, power);
                 Console.Write(array[number] + " ");
                 number++;

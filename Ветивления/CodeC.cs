@@ -8,7 +8,7 @@ namespace Ветивления
 {
     class CodeC
     {
-        public static void Main(string[] Args)
+        /*public static void Main(string[] Args)
         {
 
             double[] array = new[] { 1.2, 2.2, 3.2, 6.2, 4.2, };
@@ -38,7 +38,7 @@ namespace Ветивления
 
             var arr = new[] { 1, 2, 3, 4, };
             var arr2 = new[] { 3, 4 };
-            /*Console.WriteLine(FindSubarrayStaerIndex(arr, arr2));
+            *//*Console.WriteLine(FindSubarrayStaerIndex(arr, arr2));
 
             Console.WriteLine(GetSuit(Suits.Wands));
             Console.WriteLine(GetSuit(Suits.Coins));
@@ -58,7 +58,7 @@ namespace Ветивления
 
             Console.WriteLine(GetPoweredArray(arrayToPower, 1));
             Console.WriteLine(GetPoweredArray(arrayToPower, 2));
-            Console.WriteLine(GetPoweredArray(arrayToPower, 3));*/
+            Console.WriteLine(GetPoweredArray(arrayToPower, 3));*//*
 
 
             int[,] twoDimensionalArray = new int[2, 3];
@@ -106,7 +106,7 @@ namespace Ветивления
             }
             Console.WriteLine(massive.Length - 1);
 
-            /*var a = new int[] { 1, 2, 3 };
+            *//*var a = new int[] { 1, 2, 3 };
             var b = new int[] { 1, 2, 3 };
             Console.WriteLine(a == a);*/
 
@@ -126,69 +126,10 @@ namespace Ветивления
                 "очень ХОРОШИЙ код " +
                 "то у тебя все получится " +
                 "и я буДу Писать тЕбЕ еще " +
-                "чао";*/
+                "чао";*//*
 
-            string text = "решИла нЕ Упрощать и зашифРОВАтЬ Все послаНИЕ " +
-                "дАже не Старайся нИЧЕГО у тЕбя нЕ получится с расшифРОВкой " +
-                "Сдавайся НЕ твоего ума Ты не споСОбЕн Но может быть " +
-                "если особенно упорно подойдешь к делу " +
-                "будет Трудно конечнО " +
-                "Код ведЬ не из простых " +
-                "очень ХОРОШИЙ код " +
-                "то у тебя все получится " +
-                "и я буДу Писать тЕбЕ еще " +
-                "чао";
-
-            string[] lines = text.Split(' ');
-            Console.WriteLine(lines.Length);
-            Console.WriteLine(DecodeMessage(lines));
-        }
-
-        public static string DecodeMessage(string[] lines)
-        {
-            List<string> list = new List<string>();
-            for (int i = 0; i < lines.Length; i++)
-            {
-                if (lines[i].Substring(0, 1).Any(char.IsUpper))
-                {
-                    list.Insert(1, lines[i]);
-                }
-                else
-                {
-                    continue;
-                }
-            }
-            Console.WriteLine(list);
-            foreach (var item in list)
-            {
-                Console.WriteLine(item);
-            }
-            /*String listDone = "";
-            char[] chars = lines[0].ToCharArray();
-            for (int ctr = 0; ctr < chars.Length; ctr++)
-            {
-                if (Char.IsUpper(chars[ctr]) && chars[ctr - 1] != ' ')
-                {
-                    if (chars[ctr + 1] != ' ')
-                    {
-
-                    }
-                    list.Insert(0 ,Convert.ToString(chars[ctr]));
-                    // Console.Write(Convert.ToString(chars[ctr]));
-                    listDone += Convert.ToString(chars[ctr]);
-                }
-                else
-                {
-                    continue;
-                }
-            }*/
-           /* foreach (var letter in list)
-            {
-                Console.Write(letter);
-            }*/
-            Console.WriteLine();
-            return "";
-        }
+           
+        }*/
 
         public static int[] GetPoweredArray(int[] arr, int power)
         {
@@ -196,7 +137,6 @@ namespace Ветивления
             int number = 0;
             foreach (var index in arr)
             {
-
                 array[number] = (int)Math.Pow(index, power);
                 Console.Write(array[number] + " ");
                 number++;

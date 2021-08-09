@@ -8,9 +8,9 @@ namespace Ветивления
 {
     class List
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            /*string text = "решИла нЕ Упрощать и зашифРОВАтЬ Все послаНИЕ " +
+            *//*string text = "решИла нЕ Упрощать и зашифРОВАтЬ Все послаНИЕ " +
                "дАже не Старайся нИЧЕГО у тЕбя нЕ получится с расшифРОВкой " +
                "Сдавайся НЕ твоего ума Ты не споСОбЕн Но может быть " +
                "если особенно упорно подойдешь к делу " +
@@ -23,7 +23,7 @@ namespace Ветивления
 
             string[] lines = text.Split(' ');
             Console.WriteLine(lines.Length);
-            Console.WriteLine(DecodeMessage(lines));*/
+            Console.WriteLine(DecodeMessage(lines));*//*
 
             string[] array = new[] { "A", "AB", "B", "A", "B", "B" };
 
@@ -40,7 +40,7 @@ namespace Ветивления
                 Console.WriteLine(e.Key + "\t" + e.Value);
             }
 
-        }
+        }*/
         public static string DecodeMessage(string[] lines)
         {
             string text = "решИла нЕ Упрощать и зашифРОВАтЬ Все послаНИЕ " +

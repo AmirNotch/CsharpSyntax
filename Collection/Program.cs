@@ -59,11 +59,6 @@ namespace Collection
                 }
             }
 
-            foreach (var item in dictionary)
-            {
-                Console.WriteLine(item.Key + "\t" + item.Value);
-            }
-
             return dictionary;
         }
     }

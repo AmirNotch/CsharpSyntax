@@ -5,9 +5,9 @@ namespace Collection
 {
     class Program
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            /*var array = new[] { "A", "AB", "B", "A", "B", "B" };
+            var array = new[] { "A", "AB", "B", "A", "B", "B" };
 
             var dictionary = new Dictionary<string, int>();
 
@@ -20,11 +20,21 @@ namespace Collection
             foreach (var e in dictionary)
             {
                 Console.WriteLine(e.Key + "\t" + e.Value);
-            }*/
+            }
 
-            var dict = OptimizedContacts(new List<string>());
+            List<string> contacts = new List<string>();
+            contacts.Add("Ваня:v@mail.ru");
+            contacts.Add("Вася:vasiliy@gmail.com");
+            contacts.Add("Ваня:ivan@grozniy.ru");
+            contacts.Add("Саша:sasha1995@sasha.ru");
+            contacts.Add("Саша:alex@nd.ru");
+            contacts.Add("Паша:pavel.egorov@urfu.ru");
+            contacts.Add("Юрий:dolg@rukiy.ru");
+            contacts.Add("Гена:genadiy.the.best@inbox.ru");
+
+            var dict = OptimizedContacts(contacts);
             Console.WriteLine(dict);
-        }
+        }*/
 
         private static List<string> GetContacts()
         {
@@ -52,6 +62,7 @@ namespace Collection
                 if (dictionary.ContainsKey(namePrefix))
                 {
                     dictionary[namePrefix].Add(contact);
+                    Console.WriteLine(dictionary[namePrefix]);
                 }
                 else
                 {

@@ -78,7 +78,7 @@ Mjøstårnet 85
 Ericsson Globe 85
 Île Vierge Lighthouse 83
 Murudeshwara Temple 76
-";
+"; 
             Console.WriteLine(GetBenfordStatistics("1"));
             Console.WriteLine(GetBenfordStatistics("abc"));
             Console.WriteLine(GetBenfordStatistics("123 456 789"));

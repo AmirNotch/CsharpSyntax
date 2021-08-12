@@ -8,7 +8,7 @@ namespace Collection
 {
     class Stroka
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             string stroka = "Hello world";
             string strokaB = "Hello world";
@@ -46,13 +46,7 @@ namespace Collection
             Console.WriteLine(GetBenfordStatistics("123 456 789"));
             Console.WriteLine(GetBenfordStatistics("abc 123 def 456 gf 789 i"));
             Console.WriteLine(GetBenfordStatistics(tallestBuildings));
-
-
-
-            
-
-
-        }
+        }*/
         public static int[] GetBenfordStatistics(string text)
         {
             /*var statistics = new int[10];

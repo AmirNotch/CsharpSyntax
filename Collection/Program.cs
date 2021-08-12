@@ -22,7 +22,7 @@ namespace Collection
                 Console.WriteLine(e.Key + "\t" + e.Value);
             }
 
-            List<string> contacts = new List<string>();
+            *//*List<string> contacts = new List<string>();
             contacts.Add("Ваня:v@mail.ru");
             contacts.Add("Вася:vasiliy@gmail.com");
             contacts.Add("Ваня:ivan@grozniy.ru");
@@ -33,8 +33,8 @@ namespace Collection
             contacts.Add("Гена:genadiy.the.best@inbox.ru");
 
             var dict = OptimizedContacts(contacts);
-            Console.WriteLine(dict);
-        }*/
+            Console.WriteLine(dict);*//*
+        }
 
         private static List<string> GetContacts()
         {
@@ -48,7 +48,7 @@ namespace Collection
             contacts.Add("Юрий:dolg@rukiy.ru");
             contacts.Add("Гена:genadiy.the.best@inbox.ru");
             return contacts;
-        }
+        }*/
 
         private static Dictionary<string, List<string>> OptimizedContacts(List<string> contacts)
         {

@@ -41,21 +41,8 @@ namespace Collection
             
             string[] separators = { " ", " ", ": ", "; ", " - ", ",", "-" };
             var arrayText = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-            var count = 0;
-            for (int i = 0; i <= 20; i++)
-            {
-                for (int j = 0; j <= 3; j++)
-                    {
-                    arrayText4x21[i, j] = arrayText[count];
-                    count++;
-                    Console.Write(arrayText4x21[i,j] + '\t');
-                }
-                Console.WriteLine();
-            }
-            foreach (var item in arrayText)
-            {
-                text += item + "\t";
-            }
+            text = string.Join(" \t", arrayText);
+
             return text;
         }
 

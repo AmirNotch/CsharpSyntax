@@ -8,7 +8,7 @@ namespace Collection
 {
     class ClassRectangle
     {
-        static void Main()
+        /*static void Main()
         {
             Console.Write("Введите число длины прямоугольника: ");
             var side1 = Convert.ToInt32(Console.ReadLine());
@@ -21,7 +21,7 @@ namespace Collection
             Console.WriteLine($"Вычисления площади прямоугольника: { rectangle.AreaCalculator()}");
             Console.WriteLine($"Периметр прямоугольника: {rectangle.PerimeterCalculator()}");
 
-        }
+        }*/
     }
     class Rectangle
     {
@@ -65,7 +65,7 @@ namespace Collection
     }
     class Book
     {
-        static void Main()
+        /*static void Main()
         {
             Console.Write("Введите Название книги: ");
             var titleText = Console.ReadLine();
@@ -90,7 +90,7 @@ namespace Collection
             
             Console.WriteLine($"Контент книги: {content.Show()}");
             Console.ResetColor();
-        }
+        }*/
     }
     class Title
     {

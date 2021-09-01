@@ -4,7 +4,7 @@ namespace OOP_programming
 {
     class Inheritance
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Human human = new Human()
             {
@@ -30,7 +30,6 @@ namespace OOP_programming
             emp.ShowInfo();
             emp.ShowClearSalary();
 
-
             Employee emp1 = new Employee(6000, 13, "karim", "karimov", "kaarimocich", 2000);
             emp1.ShowInfo();
             emp1.ShowClearSalary();
@@ -54,9 +53,9 @@ namespace OOP_programming
             };
 
             m1.ListOfEmployers();
-        }
+        }*/
     }
-    class Human
+    /*class Human
     {
         public string FirstName { get; set; }
         public string LastName{ get; set; }
@@ -81,15 +80,15 @@ namespace OOP_programming
             Console.WriteLine($"FirstName: {FirstName}, LastName: {LastName}, MiddleName: {MiddleName}, Age: {YearOfBirth}");
         }
     }
-
-    class Employee : Human
+*/
+    /*class Employee : Human
     {
         public decimal Salary { get; set; }
         public decimal Tax { get; set; }
 
         public Employee() { }
 
-        public Employee(decimal salary, decimal tax, string firstName, string lastName, string middlenName, int yearOfBirth)
+        public Employee(decimal salary, decimal tax, string firstName, string lastName, string middleName, int yearOfBirth) : base(firstName, lastName, middleName, yearOfBirth)
         {
             Salary = salary;
             Tax = tax;
@@ -118,5 +117,5 @@ namespace OOP_programming
                 emp.ShowClearSalary();
             }
         }
-    }
+    }*/
 }

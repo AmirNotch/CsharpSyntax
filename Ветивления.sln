@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection", "Collection\Collection.csproj", "{9B01A304-71F6-40EA-BBA5-2DCADA08537F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP programming", "OOP programming\OOP programming.csproj", "{0FCC0510-6BD8-4A3C-AE82-2810446EDCA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP programming", "OOP programming\OOP programming.csproj", "{0FCC0510-6BD8-4A3C-AE82-2810446EDCA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLConnection", "SQLConnection\SQLConnection.csproj", "{A92ED4E4-1F40-44FE-B4EB-E58C5AFDFF66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{0FCC0510-6BD8-4A3C-AE82-2810446EDCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FCC0510-6BD8-4A3C-AE82-2810446EDCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FCC0510-6BD8-4A3C-AE82-2810446EDCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92ED4E4-1F40-44FE-B4EB-E58C5AFDFF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92ED4E4-1F40-44FE-B4EB-E58C5AFDFF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92ED4E4-1F40-44FE-B4EB-E58C5AFDFF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92ED4E4-1F40-44FE-B4EB-E58C5AFDFF66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,14 +17,23 @@ namespace OOP_programming
                 "Products (ProductName, ManuFacturer, ProductCount, Price) " +
                 "Values ('Huawei pro', 'Huawei', 10, 500.00)";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            /*using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(sqlExpression, connection);
                 int number = command.ExecuteNonQuery();
                 Console.WriteLine("Добавлено объектов: {0}", number);
             }
-            Console.Read();
+            Console.Read();*/
+
+            string sqlUpdateQuery = "Update Products Set ProductName = 'Lenovo p1000', Manufacturer = 'Lenovo', ProductCount = 20, Price = 1100.00 Where Id = 1002";
+            using (SqlConnection updateConnection = new SqlConnection(connectionString))
+            {
+                updateConnection.Open();
+                SqlCommand updateCommand = new SqlCommand(sqlUpdateQuery, updateConnection);
+                int updateNumber = updateCommand.ExecuteNonQuery();
+                Console.WriteLine("Обновленно объектов: {0}", updateNumber);
+            }
 
             string sqlQuery = "Select * from Products";
             SqlConnection sqlConnection = new SqlConnection(connectionString);
@@ -43,7 +52,10 @@ namespace OOP_programming
                     $"Price: {sqlReader.GetValue(4)}");
             }
             sqlReader.Close();
-            sqlConnection.Close();
+            sqlConnection.Close(); 
+
+
+
         }
     }
 }

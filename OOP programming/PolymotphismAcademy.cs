@@ -15,7 +15,7 @@ namespace OOP_programming
     }
     class PolymotphismAcademy
     {
-        static void Main()
+        /*static void Main()
         {
             Human h = null;
 
@@ -90,7 +90,7 @@ namespace OOP_programming
                 document.EditDocument();
                 document.SaveDocument();
             }
-        }
+        }*/
     }
 
     class DocumentWorker

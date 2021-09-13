@@ -26,13 +26,22 @@ namespace OOP_programming
             }
             Console.Read();*/
 
-            string sqlUpdateQuery = "Update Products Set ProductName = 'Lenovo p1000', Manufacturer = 'Lenovo', ProductCount = 20, Price = 1100.00 Where Id = 1002";
+            /*string sqlUpdateQuery = "Update Products Set ProductName = 'Lenovo p1000', Manufacturer = 'Lenovo', ProductCount = 20, Price = 1100.00 Where Id = 1002";
             using (SqlConnection updateConnection = new SqlConnection(connectionString))
             {
                 updateConnection.Open();
                 SqlCommand updateCommand = new SqlCommand(sqlUpdateQuery, updateConnection);
                 int updateNumber = updateCommand.ExecuteNonQuery();
                 Console.WriteLine("Обновленно объектов: {0}", updateNumber);
+            }*/
+
+            string sqlDeleteQuery = "Delete From Products Where Id = 1003";
+            using (SqlConnection deleteConnection = new SqlConnection(connectionString))
+            {
+                deleteConnection.Open();
+                SqlCommand deleteCommand = new SqlCommand(sqlDeleteQuery, deleteConnection);
+                int deleteNumber = deleteCommand.ExecuteNonQuery();
+                Console.WriteLine("Удалено объектов: {0}", deleteNumber);
             }
 
             string sqlQuery = "Select * from Products";

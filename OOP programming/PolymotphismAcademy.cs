@@ -17,9 +17,6 @@ namespace OOP_programming
     {
         static void Main()
         {
-
-
-
             Human h = null;
 
             PersonType type = PersonType.NotSet;

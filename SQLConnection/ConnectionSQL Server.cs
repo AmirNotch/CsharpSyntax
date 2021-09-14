@@ -5,7 +5,7 @@ namespace SQLConnection
 {
     class ConnectionSQL_Server
     {
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
             Console.WriteLine("Выберите какую функцию вы хотите выполнить: " +
                 "\nДобавить Смартфон: 1 " +
@@ -98,7 +98,7 @@ namespace SQLConnection
                     break;
             }
 
-            /*var conString = @"Data source = .\Dev; Initial catalog = ProductDB; Integrated Security = True";
+            *//*var conString = @"Data source = .\Dev; Initial catalog = ProductDB; Integrated Security = True";
 
             SqlConnection sqlConnection = new SqlConnection(conString);
 
@@ -133,7 +133,7 @@ namespace SQLConnection
                 Price = 20.0
             });
 
-            SelectProducts(sqlConnection);*/
+            SelectProducts(sqlConnection);*//*
 
             sqlConnection.Close();
 
@@ -142,7 +142,7 @@ namespace SQLConnection
                 Console.WriteLine("Connection is clossed!!!");
             }
 
-        }
+        }*/
 
         static void UpdateProducts(SqlConnection sqlConnection, int productId, Product product)
         {

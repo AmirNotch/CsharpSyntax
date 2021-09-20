@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,7 @@ namespace OOP_programming
     }
     class PolymotphismAcademy
     {
-        /*static void Main()
+        *//*static void Main()
         {
             Human h = null;
 
@@ -90,7 +90,7 @@ namespace OOP_programming
                 document.EditDocument();
                 document.SaveDocument();
             }
-        }*/
+        }*//*
     }
 
     class DocumentWorker
@@ -111,10 +111,10 @@ namespace OOP_programming
 
     class ProDocumentWorker : DocumentWorker
     {
-        /*public override void OpenDocument()
+        *//*public override void OpenDocument()
         {
             Console.WriteLine("Документ открыт");
-        }*/
+        }*//*
         public override void EditDocument()
         {
             Console.WriteLine("Документ отредактирован");
@@ -127,14 +127,14 @@ namespace OOP_programming
 
     class ExpertDocumentWorker : ProDocumentWorker
     {
-        /*public override void OpenDocument()
+        *//*public override void OpenDocument()
         {
             Console.WriteLine("Документ открыт");
         }
         public override void EditDocument()
         {
             Console.WriteLine("Документ отредактирован");
-        }*/
+        }*//*
         public override void SaveDocument()
         {
             Console.WriteLine("Документ сохранен в новом формате");
@@ -229,4 +229,4 @@ namespace OOP_programming
             Console.WriteLine("I'm manager");
         }
     }
-}
+}*/

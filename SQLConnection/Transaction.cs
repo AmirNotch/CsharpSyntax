@@ -9,7 +9,7 @@ namespace SQLConnection
 {
     class Transaction
     {
-        static void Main()
+        /*static void Main()
         {
             string conString = @"Data source= .\Dev; Initial Catalog = ProductDB; Integrated Security = True";
 
@@ -26,16 +26,16 @@ namespace SQLConnection
                 {
                     // Выполняем две отдельные команды
                     //command.CommandText = "Insert into Products() Values";
-                    /*command.CommandText = "Insert into " +
+                    command.CommandText = "Insert into " +
                     "Products(ProductName, Manufacturer, ProductCount, Price) " +
-                    "Values('Sony xm4', 'Sony', 5, 400.00)";*/
+                    "Values('Sony xm4', 'Sony', 5, 400.00)";
 
-                    command.CommandText = "Delete Products where Id = 1013";
+                    command.CommandText = "Delete Products where Id = 1011";
                     command.ExecuteNonQuery();
 
-                    /*command.CommandText = "Insert Into " +
+                    command.CommandText = "Insert Into " +
                         "Products(ProductName, Manufacturer, ProductCount, Price) " +
-                        "Values('Sony xm4', 'Sony', 5, 400.00)";*/
+                        "Values('Sony xm4', 'Sony', 5, 400.00)";
                     command.CommandText = "Delete Products where Id = 1012";
                     command.ExecuteNonQuery();
 
@@ -51,6 +51,6 @@ namespace SQLConnection
                     transaction.Rollback();
                 }
             }
-        }
+        }*/
     }
 }

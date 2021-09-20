@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace OOP_programming
                 "Products (ProductName, ManuFacturer, ProductCount, Price) " +
                 "Values ('Huawei pro', 'Huawei', 10, 500.00)";
 
-            /*using (SqlConnection connection = new SqlConnection(connectionString))
+            *//*using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand(sqlExpression, connection);
@@ -33,7 +33,7 @@ namespace OOP_programming
                 SqlCommand updateCommand = new SqlCommand(sqlUpdateQuery, updateConnection);
                 int updateNumber = updateCommand.ExecuteNonQuery();
                 Console.WriteLine("Обновленно объектов: {0}", updateNumber);
-            }*/
+            }*//*
 
             string sqlDeleteQuery = "Delete From Products Where Id = 1003";
             using (SqlConnection deleteConnection = new SqlConnection(connectionString))
@@ -47,7 +47,7 @@ namespace OOP_programming
             string sqlQuery = "Select * from Products";
             SqlConnection sqlConnection = new SqlConnection(connectionString);
             sqlConnection.Open();
-            /*SqlCommand command = new SqlCommand(sqlQuery, sqlConnection);*/
+            *//*SqlCommand command = new SqlCommand(sqlQuery, sqlConnection);*//*
 
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
             sqlCommand.CommandText = sqlQuery;
@@ -68,3 +68,4 @@ namespace OOP_programming
         }
     }
 }
+*/

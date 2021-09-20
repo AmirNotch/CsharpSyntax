@@ -4,7 +4,7 @@ namespace OOP_programming
 {
     class Inheritance
     {
-        /*static void Main(string[] args)
+        static void Main(string[] args)
         {
             Human human = new Human()
             {
@@ -53,12 +53,12 @@ namespace OOP_programming
             };
 
             m1.ListOfEmployers();
-        }*/
+        }
     }
-    /*class Human
+    class Human
     {
         public string FirstName { get; set; }
-        public string LastName{ get; set; }
+        public string LastName { get; set; }
         public string MiddleName { get; set; }
         public int YearOfBirth { get; set; }
         public bool IsFree { get; set; } = true;
@@ -66,7 +66,7 @@ namespace OOP_programming
 
         public Human() { }
 
-        public Human(string firstName, string lastName, string middleName, int yearOfBirth) 
+        public Human(string firstName, string lastName, string middleName, int yearOfBirth)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -80,15 +80,16 @@ namespace OOP_programming
             Console.WriteLine($"FirstName: {FirstName}, LastName: {LastName}, MiddleName: {MiddleName}, Age: {YearOfBirth}");
         }
     }
-*/
-    /*class Employee : Human
+
+    class Employee : Human
     {
         public decimal Salary { get; set; }
         public decimal Tax { get; set; }
 
         public Employee() { }
 
-        public Employee(decimal salary, decimal tax, string firstName, string lastName, string middleName, int yearOfBirth) : base(firstName, lastName, middleName, yearOfBirth)
+        public Employee(decimal salary, decimal tax, string firstName, string lastName, string middleName, int yearOfBirth) 
+            : base(firstName, lastName, middleName, yearOfBirth)
         {
             Salary = salary;
             Tax = tax;
@@ -117,5 +118,5 @@ namespace OOP_programming
                 emp.ShowClearSalary();
             }
         }
-    }*/
+    }
 }

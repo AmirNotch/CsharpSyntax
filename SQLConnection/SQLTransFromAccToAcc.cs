@@ -9,7 +9,7 @@ namespace SqlConnectionProj
 {
     class SQLTransTesting
     {
-        static void Main()
+        /*static void Main()
         {
             var conString = @"data Source = .\Dev; Initial catalog = AcademySummer; Integrated Security = true";
 
@@ -50,7 +50,7 @@ namespace SqlConnectionProj
                         break;
                 }
             }
-        }
+        }*/
 
         private static void TransferFromToAcc(string fromAcc, string toAcc, decimal amount, string conString)
         {
@@ -267,4 +267,3 @@ namespace SqlConnectionProj
         public DateTime? UpdatedAt { get; set; }
     }
 }
-

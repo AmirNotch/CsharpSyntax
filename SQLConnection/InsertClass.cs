@@ -9,7 +9,7 @@ namespace SQLConnection
 {
     class InsertClass
     {
-        static void Main()
+        /*static void Main()
         {
             var conString = @"Data Source = .\Dev; Initial Catalog = Customers; Integrated Security = True";
 
@@ -34,7 +34,7 @@ namespace SQLConnection
                 Phone = phone
             });
 
-        }
+        }*/
         static void InsertData(SqlConnection sqlConnection, Customers customers)
         {
             var query = $"Insert Into " +

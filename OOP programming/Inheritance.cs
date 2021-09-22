@@ -4,7 +4,7 @@ namespace OOP_programming
 {
     class Inheritance
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Human human = new Human()
             {
@@ -53,7 +53,7 @@ namespace OOP_programming
             };
 
             m1.ListOfEmployers();
-        }
+        }*/
     }
     class Human
     {

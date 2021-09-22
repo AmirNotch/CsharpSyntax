@@ -59,7 +59,7 @@ namespace OOP_programming
             var arrayFloat2 = new float[] { 1.0f, 2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 9.0f };
             var arrayDecimal2 = new decimal[] { 1.0m, 2.0m, 3.0m, 4.0m, 5.0m, 6.0m, 7.0m, 8.0m, 9.0m };
 
-            Console.WriteLine("Slice overload methods.");
+            Console.WriteLine("Slice overload methods.\n");
             ArrayHelper<Int32>.Slice<Int32>(arrayInt2, 1, 9);
             Console.WriteLine();
             ArrayHelper<string>.Slice<string>(arrayString2, 1, 9);

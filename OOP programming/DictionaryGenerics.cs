@@ -8,7 +8,7 @@ namespace OOP_programming
 {
     class DictionaryGenerics
     {
-        static void Main()
+       /* static void Main()
         {
             Dictionary<int, string> countries = new Dictionary<int, string>(5);
 
@@ -66,6 +66,6 @@ namespace OOP_programming
             {
                 Console.WriteLine(keyValue.Key + " - " + keyValue.Value);
             }
-        }
+        }*/
     }
 }

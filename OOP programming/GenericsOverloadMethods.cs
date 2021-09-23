@@ -8,7 +8,7 @@ namespace OOP_programming
 {
     class GenericsOverloadMethods
     {
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             var arrayInt = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, };
             var arrayString = new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -70,7 +70,7 @@ namespace OOP_programming
             Console.WriteLine();
             ArrayHelper<decimal>.Slice<decimal>(arrayDecimal2, 1, 9);
 
-        }
+        }*/
     }
     static class ArrayHelper<T>
     {

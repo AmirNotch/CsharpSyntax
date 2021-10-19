@@ -2,15 +2,83 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace OOP_programming
 {
     class HomeLesson
     {
-        static void Main()
+/*        static void Main()
         {
-            // 1 Задача
+
+            *//*var serialNumber = Console.ReadLine();
+            var errorSerialNumber1 = Regex.IsMatch(serialNumber, "^(([A-Z]){1})[0-9]{8}$");
+            Console.WriteLine(errorSerialNumber1);
+            if (errorSerialNumber1)
+            {
+                Console.WriteLine("Bad");
+            }
+            if (errorSerialNumber1)
+            {
+                Console.WriteLine("Good");
+            }*//*
+            var currentTime = DateTime.Now;
+            TimeSpan now = DateTime.Now.TimeOfDay;
+            Console.WriteLine(now);
+
+
+            *//*int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+*/
+            /*int.TryParse(Console.ReadLine(), out var salary);
+            if (salary is int)
+            {
+                Console.WriteLine(salary);
+            }
+            if (salary == 0)
+            {
+                Console.WriteLine("hello");
+            }
+            Console.WriteLine();*/
+            /*salary:
+                        Console.Write("Укажите свою заработную плату\nНапример: 3000\n");
+                        decimal.TryParse(Console.ReadLine(), out var salary);
+                        if (salary <= 0)
+                        {
+                            Console.Write("Укажите свою заработную плату\nВыше чем 0\n");
+                            goto salary;
+                        }
+                        else if (salary == 0)
+                        {
+                            Console.Write("Укажите свою заработную плату\nНапример: 3000\n");
+                            goto salary;
+                        }
+            credit:
+                        Console.Write("Укажите сумму кредита которую вы хотите взять\nНапример: 1000\n");
+                        decimal.TryParse(Console.ReadLine(), out var credit);
+                        if (credit <= 0)
+                        {
+                            Console.Write("Укажите сумму кредита которую вы хотите взять\nВыше чем 0\n");
+                            goto credit;
+                        }
+                        else if (credit == 0)
+                        {
+                            Console.Write("Укажите сумму кредита которую вы хотите взять\nНапример: 1000\n");
+                            goto credit;
+                        }
+                        decimal salaryCount = ((credit / salary) * 100.00m);
+                        Console.WriteLine(salaryCount);*//*
+
+
+
+            var nowdate = DateTime.Now;
+            Console.WriteLine(nowdate);
+            for (int i = 1; i <= 2; i++)
+            {
+                Console.WriteLine(nowdate.AddMonths(i));
+            }
+            *//*// 1 Задача
             List<SmartPhones<string, decimal>> smartPhones = new List<SmartPhones<string, decimal>>();
 
             smartPhones.Add(new SmartPhones<string, decimal> { Kachestvo = "Nice", Model = "Samsung", Price = 1000m });
@@ -48,7 +116,7 @@ namespace OOP_programming
                             Console.Write("Выберите Модель Телефона :");
 
                             var model = Console.ReadLine();
-                            /*Console.WriteLine(laptops[model].Price);*/
+                            *//*Console.WriteLine(laptops[model].Price);*//*
                             Console.WriteLine();
 
                             var number = 0;
@@ -120,7 +188,7 @@ namespace OOP_programming
                             }
                             Console.Write("Выберите Модель Ноутбука :");
                             var model = Console.ReadLine();
-                            /*Console.WriteLine(laptops[model].Price);*/
+                            *//*Console.WriteLine(laptops[model].Price);*//*
                             Console.WriteLine();
                             Console.WriteLine($"Модель: {model} - Качество: {laptops[model].Kachestvo} - Цена: {laptops[model].Price}");
                         }
@@ -140,9 +208,9 @@ namespace OOP_programming
                         Console.WriteLine("Something went wrong!!!");
                         break;
                 }
-            }
+            }*//*
         }
-    }
+*/    }
 
     public class ModelsLaptop<T, U>
     {

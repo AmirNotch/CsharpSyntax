@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +9,7 @@ namespace Threads
 {
     class TaskAndTPL
     {
-        *//*static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             *//*Task task1 = new Task(() => Console.WriteLine("Task1 is executed"));
             task1.Start();
@@ -48,19 +48,19 @@ namespace Threads
         Console.WriteLine($"Id задачи: {Task.CurrentId}");
         Console.WriteLine($"Id предыдущей задачи: {t.Id}");
         Thread.Sleep(3000);
-    }*//*
+    }*/
 
 
         static void Main(string[] args)
         {
-            *//*Task<int> task1 = new Task<int>(() => Sum(4, 5));
+            /*Task<int> task1 = new Task<int>(() => Sum(4, 5));
             // Задача продолжения
             Task task2 = task1.ContinueWith(sum => Display(sum.Result));
             task1.Start();
             // Ждём окончания второй задачи
             task2.Wait();
             Console.WriteLine("End of Main");
-            Console.ReadLine();*//*
+            Console.ReadLine();*/
 
             Task task1 = new Task(() =>
             {
@@ -89,12 +89,11 @@ namespace Threads
             Console.WriteLine($"Id Задачи: {Task.CurrentId}");
         }
 
-        *//*public static int Sum(int a, int b) => a + b;
+        /*public static int Sum(int a, int b) => a + b;
         public static void Display(int sum)
         {
             Console.WriteLine($"Sum {sum}");
-        }*//*
+        }*/
 
     }
 }
-*/

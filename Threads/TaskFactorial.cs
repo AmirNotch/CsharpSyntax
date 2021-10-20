@@ -12,7 +12,7 @@ namespace Threads
         {
             Task<int> task1 = new Task<int>(() => Factorial(5));
             task1.Start();
-
+            Console.WriteLine($"Факториял числа 5 равен {task1.Result}");
             Task<Book> task2 = new Task<Book>(() =>
             {
                 return new Book { Title = "Война и мир", Author = "Лев Т." };

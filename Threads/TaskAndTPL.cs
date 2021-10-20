@@ -51,16 +51,16 @@ namespace Threads
     }*/
 
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            /*Task<int> task1 = new Task<int>(() => Sum(4, 5));
+            *//*Task<int> task1 = new Task<int>(() => Sum(4, 5));
             // Задача продолжения
             Task task2 = task1.ContinueWith(sum => Display(sum.Result));
             task1.Start();
             // Ждём окончания второй задачи
             task2.Wait();
             Console.WriteLine("End of Main");
-            Console.ReadLine();*/
+            Console.ReadLine();*//*
 
             Task task1 = new Task(() =>
             {
@@ -87,7 +87,7 @@ namespace Threads
         public static void Display(Task t)
         {
             Console.WriteLine($"Id Задачи: {Task.CurrentId}");
-        }
+        }*/
 
         /*public static int Sum(int a, int b) => a + b;
         public static void Display(int sum)

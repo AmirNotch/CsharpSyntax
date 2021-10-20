@@ -8,7 +8,7 @@ namespace Threads
 {
     class TaskFactorial
     {
-       /* static void Main(string[] args)
+        static void Main(string[] args)
         {
             Task<int> task1 = new Task<int>(() => Factorial(5));
             task1.Start();
@@ -32,7 +32,7 @@ namespace Threads
             }
 
             return result;
-        }*/
+        }
     }
 
     public class Book

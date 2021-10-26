@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Threads
@@ -10,7 +11,7 @@ namespace Threads
     {
         static void Main(string[] args)
         {
-            Task<int> task1 = new Task<int>(() => Factorial(5));
+            /*Task<int> task1 = new Task<int>(() => Factorial(5));
             task1.Start();
             Console.WriteLine($"Факториял числа 5 равен {task1.Result}");
             Task<Book> task2 = new Task<Book>(() =>
@@ -20,10 +21,18 @@ namespace Threads
             task2.Start();
             Book b = task2.Result;
             Console.WriteLine($"Название книги: {b.Title}, Автор: {b.Author}");
-            Console.ReadLine();
+
+
+            Random random = new Random((int)DateTime.Now.Ticks);
+
+            Console.WriteLine(random);
+            Console.ReadLine();*/
+
         }
 
-        static int Factorial(int x)
+        
+
+        /*static int Factorial(int x)
         {
             int result = 1;
             for (int i = 0; i <= x; i++)
@@ -32,7 +41,7 @@ namespace Threads
             }
 
             return result;
-        }
+        }*/
     }
 
     public class Book
